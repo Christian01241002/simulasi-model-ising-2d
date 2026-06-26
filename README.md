@@ -1,15 +1,14 @@
-# simulasi-model-ising-2d
-Simulasi Model Ising 2D menggunakan Algoritma Metropolis
-
 # Simulasi Model Ising 2D Menggunakan Algoritma Metropolis
 
 Repository ini dibuat sebagai tugas mata kuliah **Fisika Komputasi**. Proyek ini mengimplementasikan **Model Ising 2 Dimensi (2D)** menggunakan **Algoritma Metropolis (Monte Carlo)** untuk mempelajari fenomena **transisi fasa**, **magnetisasi spontan**, dan perubahan perilaku sistem pada berbagai kondisi suhu.
 
 ## Anggota Kelompok
 
-| 1 | Christian Mayone Permana  01241002 
-| 2 | Juan Akhbar  01241006 
-| 3 | M. Sabila Arrosad  01241012 
+| No | Nama | NIM |
+|----|---------------------------|----------|
+| 1 | Christian Mayone Permana | 01241002 |
+| 2 | Juan Akhbar | 01241006 |
+| 3 | M. Sabila Arrosad | 01241012 |
 
 ---
 
