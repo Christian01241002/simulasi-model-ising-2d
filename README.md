@@ -63,7 +63,8 @@ Pada pengerjaan tugas ini, kelompok kami menggunakan beberapa teknologi AI sebag
 
 1. **ChatGPT (GPT-5.5)** untuk membantu menjelaskan konsep Model Ising 2D, penyusunan algoritma Metropolis, penulisan dokumentasi, serta pembuatan halaman HTML dan GitHub Pages.
 2. **Claude Sonnet** sebagai referensi tambahan dalam memvalidasi penjelasan konsep fisika dan penyusunan dokumentasi.
-3. **Google Gemini** sebagai sumber referensi tambahan mengenai implementasi simulasi dan penjelasan konsep fisika komputasi.
+3. **Google Gemini** sebagai referensi tambahan mengenai implementasi simulasi, konsep fisika komputasi, serta alternatif penyelesaian permasalahan dalam pengembangan program.
+4. **Perplexity AI** untuk mencari referensi ilmiah, dokumentasi, dan sumber informasi terbaru yang berkaitan dengan Model Ising 2D, algoritma Metropolis, serta fisika komputasi.
 
 ---
 
