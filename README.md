@@ -91,6 +91,36 @@ Website hasil simulasi dapat diakses melalui **GitHub Pages** yang berisi:
 - Simulasi Kasus 2 (T = 2.27)
 - Simulasi Kasus 3 (T = 4.0)
 
+
+## Evaluasi Hasil
+
+Berdasarkan hasil simulasi dan implementasi yang telah dilakukan, proyek ini telah memenuhi kriteria evaluasi sebagai berikut:
+
+### 1. Akurasi Matematis dan Fisis
+
+Implementasi algoritma Metropolis telah menggunakan perhitungan perubahan energi lokal sesuai persamaan:
+
+[
+\Delta E = 2s_{i,j}\sum s_{\text{tetangga}}
+]
+
+dengan menerapkan **Periodic Boundary Conditions (PBC)** menggunakan operasi modulo (`%`) sehingga setiap spin selalu memiliki empat tetangga. Probabilitas penerimaan perubahan spin juga telah mengikuti aturan Metropolis:
+
+[
+R=e^{-\Delta E/T}
+]
+
+yang memungkinkan sistem mencapai kesetimbangan termal sesuai teori mekanika statistik.
+
+### 2. Efisiensi Komputasi
+
+Program dikembangkan menggunakan bahasa Python dengan struktur fungsi yang terpisah untuk memudahkan pembacaan kode. Perhitungan dilakukan menggunakan **energi lokal** sehingga tidak perlu menghitung ulang energi total kisi pada setiap iterasi. Pendekatan ini membuat simulasi lebih efisien, terutama untuk 200.000 langkah Monte Carlo yang digunakan pada setiap studi kasus.
+
+### 3. Komunikasi Ilmiah
+
+Hasil simulasi disajikan dalam bentuk visualisasi konfigurasi spin menggunakan `cmap='binary'` dan grafik riwayat magnetisasi rata-rata terhadap waktu simulasi. Setiap studi kasus dilengkapi dengan interpretasi ilmiah mengenai perilaku sistem pada fase feromagnetik, transisi fasa, dan fase paramagnetik sehingga memudahkan pemahaman hubungan antara teori dan hasil simulasi.
+
+
 ---
 
 **Mata Kuliah:** Fisika Komputasi  
