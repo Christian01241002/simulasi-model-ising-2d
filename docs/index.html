@@ -2,68 +2,122 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Simulasi Model Ising 2D</title>
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family:Arial;
-    background:#f4f4f4;
-    text-align:center;
-    margin:40px;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e1b4b);
+    color:white;
+    padding:40px;
 }
 
 .container{
-    background:white;
-    width:700px;
+    max-width:900px;
     margin:auto;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0px 0px 15px gray;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 0 35px rgba(139,92,246,.35);
 }
 
 h1{
-    color:#0b5ed7;
+    text-align:center;
+    font-size:42px;
+    margin-bottom:8px;
+    background:linear-gradient(90deg,#06b6d4,#8b5cf6,#ec4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+p{
+    line-height:1.8;
+    color:#e2e8f0;
+    text-align:justify;
+}
+
+h3{
+    color:#22d3ee;
+    margin-top:35px;
+    margin-bottom:15px;
 }
 
 a{
     display:block;
-    padding:15px;
-    margin:10px;
     text-decoration:none;
-    background:#0b5ed7;
+    text-align:center;
+    margin:18px 0;
+    padding:18px;
+    border-radius:15px;
     color:white;
-    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#8b5cf6,#06b6d4,#ec4899);
+    transition:.35s;
+    box-shadow:0 0 20px rgba(236,72,153,.35);
 }
 
 a:hover{
-    background:#084298;
+    transform:translateY(-5px) scale(1.02);
+    box-shadow:0 0 35px rgba(6,182,212,.8);
+}
+
+hr{
+    margin:35px 0;
+    border:none;
+    height:2px;
+    background:linear-gradient(90deg,#8b5cf6,#06b6d4,#ec4899);
 }
 
 table{
-    margin:auto;
-    width:95%;
+    width:100%;
     border-collapse:collapse;
     margin-top:15px;
-    margin-bottom:20px;
-}
-
-table, th, td{
-    border:1px solid #ccc;
+    margin-bottom:25px;
+    overflow:hidden;
+    border-radius:15px;
 }
 
 th{
-    background:#0b5ed7;
+    background:linear-gradient(90deg,#8b5cf6,#06b6d4);
+    padding:15px;
     color:white;
-    padding:10px;
 }
 
 td{
-    padding:10px;
+    padding:12px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.1);
 }
 
-p{
-    text-align:justify;
+tr:hover td{
+    background:rgba(139,92,246,.15);
+}
+
+.footer{
+    margin-top:35px;
+    text-align:center;
+    color:#94a3b8;
+    font-size:14px;
 }
 
 </style>
@@ -74,31 +128,36 @@ p{
 
 <div class="container">
 
-<h1>Simulasi Model Ising 2D</h1>
+<h1>⚛️ Simulasi Model Ising 2D</h1>
 
-<h3>Fisika Komputasi</h3>
+<div class="subtitle">
+Fisika Komputasi • Monte Carlo • Algoritma Metropolis
+</div>
 
 <p>
-Simulasi Model Ising 2 Dimensi menggunakan Algoritma Metropolis untuk mempelajari perubahan orientasi spin pada berbagai kondisi suhu. Proyek ini menampilkan visualisasi hasil simulasi pada fase feromagnetik, transisi fasa, dan fase paramagnetik.
+Website ini merupakan hasil implementasi simulasi <b>Model Ising 2 Dimensi</b> menggunakan <b>Algoritma Metropolis</b> untuk mempelajari fenomena magnetisasi spontan, transisi fasa, dan perubahan perilaku spin pada berbagai kondisi suhu.
 </p>
 
+<br>
+
 <a href="Kasus_1_Suhu_Rendah.html">
-Kasus 1 - Fase Feromagnetik (T = 1.0)
+🧲 Kasus 1 — Fase Feromagnetik (T = 1.0)
 </a>
 
 <a href="Kasus_2_Suhu_Kritis.html">
-Kasus 2 - Transisi Fasa (T = 2.27)
+⚛️ Kasus 2 — Transisi Fasa (T = 2.27)
 </a>
 
 <a href="Kasus_3_Suhu_Tinggi.html">
-Kasus 3 - Fase Paramagnetik (T = 4.0)
+🔥 Kasus 3 — Fase Paramagnetik (T = 4.0)
 </a>
 
 <hr>
 
-<h3>Kelompok Barcelona</h3>
+<h3>👨‍💻 Anggota Kelompok Barcelona</h3>
 
 <table>
+
 <tr>
 <th>No</th>
 <th>Nama</th>
@@ -107,7 +166,7 @@ Kasus 3 - Fase Paramagnetik (T = 4.0)
 
 <tr>
 <td>1</td>
-<td>Christian Mayone</td>
+<td>Christian Mayone Permana</td>
 <td>01241002</td>
 </tr>
 
@@ -125,13 +184,13 @@ Kasus 3 - Fase Paramagnetik (T = 4.0)
 
 </table>
 
-<h3>Penggunaan AI</h3>
+<h3>🤖 Penggunaan AI</h3>
 
 <p>
-Beberapa layanan Artificial Intelligence (AI) digunakan sebagai alat bantu dalam proses penyusunan proyek ini, antara lain <b>ChatGPT GPT-5.5</b>, <b>Google Gemini</b>, dan <b>Claude AI</b>. AI dimanfaatkan untuk membantu memahami konsep Model Ising 2D, memberikan referensi mengenai algoritma Metropolis, membantu penyusunan dokumentasi, memperbaiki struktur kode program, serta menyempurnakan penjelasan hasil simulasi. Seluruh hasil akhir tetap diperiksa, diuji, dan disesuaikan kembali oleh anggota kelompok.
+Dalam pengerjaan proyek ini digunakan beberapa layanan Artificial Intelligence (AI), yaitu <b>ChatGPT (GPT-5.5)</b>, <b>Google Gemini</b>, dan <b>Claude AI</b>. AI dimanfaatkan sebagai alat bantu dalam memahami konsep Model Ising 2D, memberikan referensi implementasi algoritma Metropolis, membantu penyusunan dokumentasi, memperbaiki struktur kode program, serta menyempurnakan analisis hasil simulasi. Seluruh hasil akhir tetap diperiksa, diuji, dan disesuaikan kembali oleh anggota kelompok.
 </p>
 
-<h3>Penggunaan Aplikasi</h3>
+<h3>💻 Penggunaan Aplikasi</h3>
 
 <table>
 
@@ -147,35 +206,47 @@ Beberapa layanan Artificial Intelligence (AI) digunakan sebagai alat bantu dalam
 
 <tr>
 <td>GitHub</td>
-<td>Menyimpan source code, dokumentasi, serta mengelola versi proyek.</td>
+<td>Menyimpan source code, dokumentasi, dan mengelola versi proyek.</td>
 </tr>
 
 <tr>
 <td>GitHub Pages</td>
-<td>Mempublikasikan proyek dalam bentuk website statis sehingga dapat diakses melalui browser.</td>
+<td>Mempublikasikan proyek dalam bentuk website yang dapat diakses secara online.</td>
 </tr>
 
 <tr>
 <td>NumPy</td>
-<td>Melakukan komputasi numerik dan operasi matriks yang digunakan dalam simulasi Model Ising 2D.</td>
+<td>Melakukan komputasi numerik dan operasi matriks pada simulasi Model Ising 2D.</td>
 </tr>
 
 <tr>
 <td>Matplotlib</td>
-<td>Membuat visualisasi data berupa grafik dan konfigurasi spin hasil simulasi.</td>
+<td>Membuat visualisasi konfigurasi spin dan grafik magnetisasi.</td>
 </tr>
 
 <tr>
 <td>Visual Studio Code</td>
-<td>Mengedit file HTML dan source code proyek sebelum dipublikasikan.</td>
+<td>Mengedit file HTML dan source code proyek.</td>
 </tr>
 
 <tr>
 <td>Google Chrome</td>
-<td>Menguji tampilan website dan memastikan seluruh halaman dapat berjalan dengan baik.</td>
+<td>Menguji tampilan website dan memastikan seluruh halaman berjalan dengan baik.</td>
 </tr>
 
 </table>
+
+<h3>🌐 Website GitHub Pages</h3>
+
+<p style="text-align:center;">
+<a href="https://christian01241002.github.io/simulasi-model-ising-2d/" target="_blank">
+🚀 Buka Website Simulasi Model Ising 2D
+</a>
+</p>
+
+<div class="footer">
+© 2026 Kelompok Barcelona • Simulasi Model Ising 2D • Fisika Komputasi
+</div>
 
 </div>
 
